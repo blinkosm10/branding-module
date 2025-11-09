@@ -53,9 +53,9 @@ MAKE_STRING_FUNCTION(getHaveHDMIinHD)
 MAKE_STRING_FUNCTION(getHaveHDMIinFHD)
 MAKE_STRING_FUNCTION(getHaveWOL)
 MAKE_STRING_FUNCTION(getHaveWWOL)
-MAKE_STRING_FUNCTION(getHaveTranscoding1)
-MAKE_STRING_FUNCTION(getHaveTranscoding2)
-MAKE_STRING_FUNCTION(getHaveCI)
+MAKE_STRING_FUNCTION(getSoCFamily)
+MAKE_STRING_FUNCTION(getHaveVFDSymbol)
+ 
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
@@ -96,9 +96,8 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getHaveHDMIinFHD", getHaveHDMIinFHD, METH_NOARGS, NULL },
 	{ "getHaveWOL", getHaveWOL, METH_NOARGS, NULL },
 	{ "getHaveWWOL", getHaveWWOL, METH_NOARGS, NULL },
-	{ "getHaveTranscoding1", getHaveTranscoding1, METH_NOARGS, NULL },
-	{ "getHaveTranscoding2", getHaveTranscoding2, METH_NOARGS, NULL },
-	{ "getHaveCI", getHaveCI, METH_NOARGS, NULL },
+	{ "getSoCFamily", getSoCFamily, METH_NOARGS, NULL },
+    { "getHaveVFDSymbol", getHaveVFDSymbol, METH_NOARGS, NULL },
 	{ NULL, NULL, 0, NULL }
 };
 
