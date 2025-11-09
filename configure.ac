@@ -256,6 +256,17 @@ AC_ARG_WITH(driverdate,
 AC_SUBST(DRIVERDATE)
 AC_DEFINE_UNQUOTED(DRIVERDATE,"$DRIVERDATE",[driver date])
 
+AC_ARG_WITH(socfamily,
+	[  --with-socfamily=NAME SoC family [[SoC,...]]],
+	[SOCFAMILY="$withval"],[SOCFAMILY=""])
+AC_SUBST(SOCFAMILY)
+AC_DEFINE_UNQUOTED(SOCFAMILY,"$SOCFAMILY",[SoC family])
+
+AC_ARG_WITH(vfd-symbol,
+	[  --with-vfd-symbol=NAME vfd symbol [[vfdsymbol,...]]],
+	[HAVE_VFDSYMBOL="$withval"],[HAVE_VFDSYMBOL="True"])
+AC_SUBST(HAVE_VFDSYMBOL)
+AC_DEFINE_UNQUOTED(HAVE_VFDSYMBOL,"$HAVE_VFDSYMBOL",[vfdsymbol])
 
 AC_ARG_WITH(debug,
 	AS_HELP_STRING([--without-debug],[disable debugging code]),
