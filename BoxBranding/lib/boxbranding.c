@@ -753,6 +753,18 @@ char *_getMachineUBINIZE()
 	return strdup(UBINIZE_ARGS);
 }
 
+char *_getSoCFamily()
+{
+	return strdup(SOCFAMILY);
+}
+
+char *_getHaveVFDSymbol()
+{
+	if(strcmp(HAVE_VFDSYMBOL, "False") == 0)
+		return strdup("");
+	return strdup(HAVE_VFDSYMBOL);
+}
+
 char *_getMachineProcModel() // return just value from proc entry
 {
 	FILE *boxtype_file;
